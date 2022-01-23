@@ -16,7 +16,6 @@ cp /usr/local/CouchPotatoServer/init/freebsd /usr/local/etc/rc.d/couchpotato
 sed -i '' "s/python/python2/g" /usr/local/etc/rc.d/couchpotato
 
 echo "Executing CouchPotato service"
-ln -s /usr/local/bin/python2.7 /usr/bin/python2
 chmod u+x /usr/local/etc/rc.d/couchpotato
 sysrc "couchpotato_enable=YES"
-service couchpotato start
+#service couchpotato start
