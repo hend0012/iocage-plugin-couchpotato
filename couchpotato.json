@@ -1,0 +1,36 @@
+{
+    "name": "CouchPotato",
+    "release": "12.2-RELEASE",
+    "artifact": "https://github.com/hend0012/iocage-plugin-couchpotato.git",
+    "pkgs": [
+        "git",
+        "python3",
+        "python38",
+        "py38-pip",
+        "py38-setuptools",
+        "py38-sqlite3",
+        "py38-pillow",
+        "py38-virtualenv",
+        "unrar",
+        "ca_root_nss",
+        "libmediainfo",
+        "libxslt",
+        "libxml2",
+        "rust"
+    ],
+    "properties": {
+        "nat": 1,
+        "nat_forwards": "tcp(5050:5050)"
+    },
+    "packagesite": "http://pkg.FreeBSD.org/${ABI}/latest",
+    "fingerprints": {
+        "iocage-plugins": [
+            {
+                "function": "sha256",
+                "fingerprint": "b0170035af3acc5f3f3ae1859dc717101b4e6c1d0a794ad554928ca0cbb2f438"
+            }
+        ]
+    },
+    "official": false,
+    "revision": 0
+}

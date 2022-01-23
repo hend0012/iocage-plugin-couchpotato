@@ -1,0 +1,4 @@
+{
+	"adminportal": "http://%%IP%%:5050/",
+	"docurl": "https://github.com/CouchPotato/CouchPotatoServer/blob/master/README.md"
+}

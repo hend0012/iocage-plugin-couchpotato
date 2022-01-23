@@ -1,2 +1,2 @@
 # iocage-plugin-couchpotato
-Truenas plugin
+Artifact file(s) for couchpotato iocage plugin
