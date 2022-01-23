@@ -3,10 +3,6 @@
 echo "Download couchpotato repo"
 git clone https://github.com/CouchPotato/CouchPotatoServer.git /usr/local/CouchPotatoServer
 
-echo "Updating dependencies"
-pip install --upgrade pip
-pip install --upgrade virtualenv
-
 echo "Create couchpotato user"
 pw user add couchpotato -c "CouchPotato" -d /nonexistent -s /usr/bin/nologin -w no
 chown -R couchpotato:couchpotato /usr/local/CouchPotatoServer
