@@ -13,6 +13,7 @@ chown -R couchpotato:couchpotato /.cargo
 echo "Installing CouchPotato service"
 mkdir -p /usr/local/etc/rc.d
 cp /usr/local/CouchPotatoServer/init/freebsd /usr/local/etc/rc.d/couchpotato
+sed -i '' "s/python/python2/g" /usr/local/etc/rc.d/couchpotato
 
 echo "Executing CouchPotato service"
 ln -s /usr/local/bin/python2.7 /usr/bin/python2
