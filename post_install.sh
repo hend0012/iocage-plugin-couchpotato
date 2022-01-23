@@ -15,6 +15,7 @@ mkdir -p /usr/local/etc/rc.d
 cp /usr/local/CouchPotatoServer/init/freebsd /usr/local/etc/rc.d/couchpotato
 
 echo "Executing SickChill service"
+ln -s /usr/local/bin/python2 /usr/local/bin/python
 chmod u+x /usr/local/etc/rc.d/couchpotato
 sysrc "couchpotato_enable=YES"
 service couchpotato start
